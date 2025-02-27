@@ -23,3 +23,12 @@ sample_dashboards:
     related_integrations:
       - id: dcgm
         platform: GKE
+  -
+    category: NVIDIA GPUs
+    id: nvidia-triton-prometheus
+    display_name: NVIDIA Triton Inference Server (GKE Only)
+    description: |-
+      This dashboard has charts displaying throughput, latency, resource usage, errors, and other metrics for inference.
+    related_integrations:
+      - id: nvidia-triton
+        platform: GKE
